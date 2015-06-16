@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "SubmoduleA.h"
 
 @interface xcode_ciTests : XCTestCase
 
@@ -35,6 +36,14 @@
     [self measureBlock:^{
         // Put the code you want to measure the time of here.
     }];
+}
+
+- (void)testSubmoduleA {
+    SubmoduleA *submodule = [[SubmoduleA alloc] init];
+    NSUInteger result = [submodule submoduleA];
+    NSUInteger expectedResult = 2001;
+    
+    XCTAssertEqual(result, expectedResult);
 }
 
 @end

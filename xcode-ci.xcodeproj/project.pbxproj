@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		001C0F761B300C9700600C53 /* SubmoduleA.m in Sources */ = {isa = PBXBuildFile; fileRef = 001C0F751B300C9700600C53 /* SubmoduleA.m */; };
+		001C0F771B300C9700600C53 /* SubmoduleA.m in Sources */ = {isa = PBXBuildFile; fileRef = 001C0F751B300C9700600C53 /* SubmoduleA.m */; };
 		0063CE0D1B2FF08400865909 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0063CE0C1B2FF08400865909 /* main.m */; };
 		0063CE101B2FF08400865909 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0063CE0F1B2FF08400865909 /* AppDelegate.m */; };
 		0063CE131B2FF08400865909 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0063CE121B2FF08400865909 /* ViewController.m */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		001C0F741B300C9700600C53 /* SubmoduleA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmoduleA.h; sourceTree = "<group>"; };
+		001C0F751B300C9700600C53 /* SubmoduleA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmoduleA.m; sourceTree = "<group>"; };
 		0063CE071B2FF08400865909 /* xcode-ci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "xcode-ci.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0063CE0B1B2FF08400865909 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0063CE0C1B2FF08400865909 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,9 +64,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		001C0F6E1B300AF000600C53 /* externals */ = {
+			isa = PBXGroup;
+			children = (
+				001C0F731B300C9700600C53 /* submodule-a */,
+			);
+			path = externals;
+			sourceTree = "<group>";
+		};
+		001C0F731B300C9700600C53 /* submodule-a */ = {
+			isa = PBXGroup;
+			children = (
+				001C0F741B300C9700600C53 /* SubmoduleA.h */,
+				001C0F751B300C9700600C53 /* SubmoduleA.m */,
+			);
+			path = "submodule-a";
+			sourceTree = "<group>";
+		};
 		0063CDFE1B2FF08400865909 = {
 			isa = PBXGroup;
 			children = (
+				001C0F6E1B300AF000600C53 /* externals */,
 				0063CE091B2FF08400865909 /* xcode-ci */,
 				0063CE231B2FF08400865909 /* xcode-ciTests */,
 				0063CE081B2FF08400865909 /* Products */,
@@ -219,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				001C0F761B300C9700600C53 /* SubmoduleA.m in Sources */,
 				0063CE131B2FF08400865909 /* ViewController.m in Sources */,
 				0063CE101B2FF08400865909 /* AppDelegate.m in Sources */,
 				0063CE0D1B2FF08400865909 /* main.m in Sources */,
@@ -229,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				001C0F771B300C9700600C53 /* SubmoduleA.m in Sources */,
 				0063CE271B2FF08400865909 /* xcode_ciTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
