@@ -41,7 +41,7 @@
 - (void)testSubmoduleA {
     SubmoduleA *submodule = [[SubmoduleA alloc] init];
     NSUInteger result = [submodule submoduleA];
-    NSUInteger expectedResult = 2001;
+    NSUInteger expectedResult = 4002;
     
     XCTAssertEqual(result, expectedResult);
 }
